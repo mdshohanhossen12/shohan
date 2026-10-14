@@ -397,4 +397,36 @@ footer {
         opacity: 0;
         transform: scale(0.8) translateY(-60px);
     }
+
+/* Mobile Responsive Styling */
+img, video {
+    max-width: 100% !important;
+    height: auto !important;
 }
+
+body {
+    overflow-x: hidden !important; /* স্ক্রিন ডানে-বামে ভেঙ্গে যাওয়া বন্ধ করবে */
+}
+
+/* ছোট মোবাইলের জন্য স্পেশাল ডিজাইন */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 24px !important;
+    }
+    
+    .subtitle {
+        font-size: 16px !important;
+    }
+    
+    .card {
+        padding: 15px !important;
+        margin: 10px !important;
+    }
+
+    .magic-rose-btn, .love-btn {
+        font-size: 16px !important;
+        padding: 12px 24px !important;
+        width: 90% !important;
+    }
+}
+} 
